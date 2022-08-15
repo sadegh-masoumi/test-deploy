@@ -4,7 +4,6 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-7m9^+dfi&1ce(+)+ih5fv$pq1$+ob!z526(3ec(sf@e#+j1&_='
 
 DEBUG = os.environ.get('DEBUG', True)
@@ -111,7 +110,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = '/var/www/static/'
-
+MEDIA_ROOT = '/var/www/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
